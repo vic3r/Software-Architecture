@@ -26,9 +26,9 @@ public class Purchases implements Operations{
 	}
 
 	@Override
-	public OptionalDouble getAvg() {
+	public Double getAvg() {
 		// TODO Auto-generated method stub
-		return purchases.stream().mapToDouble(a -> a).average();
+		return purchases.stream().mapToDouble(a -> a).average().getAsDouble();
 	}
 
 }
